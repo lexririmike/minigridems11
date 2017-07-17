@@ -13,7 +13,7 @@ class Powerplants extends MY_Controller {
 		$user = $this->ion_auth->user()->row();
 		$this->load->model('API_model');
 		$datas=$this->API_model->read();
-		
+		    $vdata = array();
 		   $dtpoints = array();
 		//validate form input
 		$this->form_validation->set_rules('GridNameInput','Grid Name is Required', 'required');
