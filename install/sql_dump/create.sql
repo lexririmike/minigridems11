@@ -200,7 +200,7 @@ CREATE TABLE `<DB_PREFIX>input` (
   `name` varchar(200) NOT NULL,
   `key_num` int(20) NOT NULL,
   `datatype` int(2) DEFAULT NULL,
-  `timestamp` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `timestamp` timestamp NOT NULL  ON UPDATE CURRENT_TIMESTAMP,
   `inputvalue` double NOT NULL,
   `process_list` varchar(255) NOT NULL,
   `description` varchar(200) DEFAULT NULL,
